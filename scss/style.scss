@@ -1,0 +1,75 @@
+@import "vars";
+@import "mixins";
+
+/* GLOBAL STYLE*/
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    color: $colortext;
+    -webkit-text-size-adjust: 100%;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 14px;
+    }
+}
+
+body {
+    &.no-scroll {
+      overflow: hidden;
+    }
+  }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p, span, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $greydark;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.anim-show {
+    transform: translateY(150%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.anim-show.active,
+.active .anim-show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+/* Vendor */
+@import "vendor/slick";
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/about";
+@import "blocks/argument";
+@import "blocks/made";
+@import "blocks/team";
+@import "blocks/reviews";
+@import "blocks/order";
+@import "blocks/footer";
+@import "blocks/range";
+@import "blocks/coop";
+@import "blocks/contacts";

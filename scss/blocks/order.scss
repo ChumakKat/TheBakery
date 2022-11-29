@@ -1,0 +1,239 @@
+/* ORDER */
+.order {
+    display: flex;
+    margin-bottom: 120px;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 100px;
+       }
+    @include breakpoint ($tablets-bp-768) {
+        margin-bottom: 80px;
+       }
+}
+
+.order__left {
+    width: 50%;
+
+    @include breakpoint ($tablets-bp-768) {
+        width: 100%;
+        text-align: center;
+       }
+}
+
+.form__subtitle {
+    margin-bottom: 30px;
+    max-width: 450px;
+
+    @include breakpoint ($tablets-bp-768) {
+        max-width: none;
+       }
+}
+
+.data__items  {
+    width: 100%;
+    max-width: 450px;
+
+    &.active .data__item{
+        transform: translateX(0);
+    }
+    &.active .data__item:nth-child(1){
+        transition: all .5s ease 0s;
+    }
+    &.active .data__item:nth-child(2){
+        transition: all .5s ease .2s;
+    }
+    &.active .data__item:nth-child(3){
+        transition: all .5s ease .4s;
+    }
+    &.active .data__item:nth-child(4){
+        transition: all .5s ease .6s;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+        max-width: none;
+       }
+}
+
+.data__item {
+    transform: translateX(-120%);
+    transition: all .5s ease;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid $grayel;
+    outline: none;
+    resize: none;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    &:focus {
+        border: 1px solid $brovn;
+    }
+
+    &::placeholder {
+        color: $grayinput;
+        font-family: inherit;
+    }
+
+    &__red {
+        border: 1px solid red;
+    }
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px $white!important;
+   box-shadow: inset 0 0 0 50px $white!important;
+}
+
+.task__input {
+    min-height: 150px;
+}
+
+.form__btn {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 16px 20px;
+}
+
+.order__rght {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    @include breakpoint ($tablets-bp-768) {
+        display: none;
+       }
+
+}
+
+.order__img {
+    width: 100%;
+    max-width: 400px;
+
+    @include breakpoint ($desktop-bp-992) {
+        max-width: 300px;
+      }
+}
+
+/* ORDER MODAL */
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+    background-color: rgba($black, .6);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: $white;
+    padding: 40px 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px $greydark;
+
+    @include breakpoint ($tablets-bp-768){
+        max-width: 460px;
+        padding: 40px;
+    }
+
+    @include breakpoint ($mobile-bp-480) {
+        padding: 30px;
+    }
+}
+
+.modal__title {
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 20px;
+
+    @include breakpoint ($tablets-bp-768){
+        font-size: 20px;
+    }
+
+    @include breakpoint ($mobile-bp-480){
+        margin-bottom: 10px;
+    }
+}
+
+.modal__text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: $black;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    // border: 1px solid red;
+
+    @include breakpoint ($tablets-bp-768){
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+
+    @include breakpoint ($mobile-bp-480){
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+.modal__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 12px 50px;
+    border: none;
+    outline: none;
+    width: auto;  
+}
+
+// Modal ORDER
+.modal__oder-wrap {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.modal__order-link {
+    text-decoration: underline;
+    color: $brovn;
+    font-weight: 500;
+
+    &:hover {
+        color:darken($color: $brovn, $amount: 10);
+        text-decoration: none;
+    }
+}
+
+.modal__text-order {
+    max-width: 400px;
+    padding-bottom: 20px;
+    // border: 1px solid blue;
+}
+
+.modal__order-email  {
+    cursor: pointer;
+}

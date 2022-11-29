@@ -1,0 +1,131 @@
+/* ABOUT */
+.about {
+    text-align: center;
+    margin: 0 30px 50px;
+    // border: 1px solid red;
+
+    @include breakpoint ($desktop-bp-992) {
+        margin: 0 20px 40px;
+      }
+    @include breakpoint ($tablets-bp-768) {
+        margin: 0 20px 40px;
+      }
+    @include breakpoint ($mobile-bp-480) {
+        margin: 0 0 30px;
+      }
+}
+
+.section__title {
+    color: $brovn;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;   
+    margin-top: 0;
+
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 27px;
+      }
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 25px;
+      }
+    @include breakpoint ($mobile-bp-480) {
+        font-size: 24px;
+      }
+    @include breakpoint ($mobile-bp-375) {
+        font-size: 22px;
+      }
+}
+
+.section__text {
+    margin: 0 auto 30px;
+    position: relative;
+    z-index: 20;
+
+    & p {
+        margin-top: 15px;
+    }
+}
+
+.about__btn {
+    background-color: $gray;
+    box-shadow: 0px 20px 40px #cac9c9;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        background-color: darken($color: $gray, $amount: 7);
+    } 
+}
+
+.tab {
+    overflow: hidden;
+    transition: all .9s linear;
+    height: 0;
+    // border: 1px solid red;
+
+    & p {
+        margin-bottom: 10px;
+    }
+
+    & p:last-child {
+        margin-bottom: 40px;
+    }
+
+    &.has {
+        height: auto;
+        transition: all .9s linear;
+    }
+}
+
+.btn__box {
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 10;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to top, $white, transparent);
+}
+
+.btn__turn {
+    // border: 1px solid red;
+    position: absolute;
+    top: 10px;
+    left:50%;
+   
+    transform: translate(-50%);
+    opacity: 0;
+    transition:  all .9s linear;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+.btn__more {
+    opacity: 1;
+    transition:  all .9s linear;
+    &.show {
+        opacity: 0;
+      }
+}
+
+.btn__icon {
+    transform: translateX(0);
+    transition:  all .9s linear;
+    
+    &.show {
+        transform: translateX(150px);
+      }
+}
+
+
+
+
+
+
+

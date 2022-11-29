@@ -1,0 +1,101 @@
+/* FOOTER */
+
+.footer {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    @include breakpoint ($tablets-bp-768) {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.footer__link {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer__text {
+    margin: 20px 0 30px;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.social__box {
+    width: 40px;
+    height: 40px;
+    background-color: $gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: darken($color: $gray, $amount: 7);
+    }
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: $white;
+
+    &-insta,  &-tel {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.footer__right {
+    width: 68%;
+
+    @include breakpoint ($tablets-bp-768) {
+        display: none;
+      }
+}
+
+.footer__items {
+    display: flex;
+    // border: 1px solid red;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid blue;
+    padding-left: 55px;
+    width: 100%;
+
+    @include breakpoint ($desktop-bp-880) {
+        padding-left: 40px;
+      }
+}
+
+.footer__item-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer__item-link {
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

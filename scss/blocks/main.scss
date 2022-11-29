@@ -1,0 +1,428 @@
+/* Global MAIN */
+.page {
+    overflow: hidden;
+
+    &__mask {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+}
+
+// .parallax {
+//     border: 1px solid red;
+//     position: absolute;
+// }
+
+/* Circle back*/
+.circle__one {
+    position: absolute;
+    top: -300px;
+    left: -150px;
+    z-index: -1;
+
+    @include breakpoint ($desktop-bp-992) {
+      max-width: 500px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+      max-width: 450px;
+      left: -200px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+      max-width: 400px;
+      left: -250px;
+    }
+    @include breakpoint ($mobile-bp-480) {
+      max-width: 350px;
+      left: -200px;
+    }
+}
+
+.circle__two {
+    position: absolute;
+    top: -120px;
+    right: -400px;
+    z-index: -1;
+
+    @include breakpoint ($desktop-bp-992) {
+      max-width: 600px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+      max-width: 500px;
+      right: -390px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+      max-width: 400px;
+      right: -300px;
+    }
+    @include breakpoint ($mobile-bp-480) {
+      max-width: 300px;
+      right: -230px;
+    }
+}
+
+.circle__three {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    z-index: -1;
+
+    @include breakpoint ($tablets-bp-768) {
+      max-width: 250px;
+      left: 250px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+      max-width: 200px;
+      left: 200px;
+    }
+    @include breakpoint ($mobile-bp-480) {
+      max-width: 140px;
+      top: -20px;
+      left: 150px;
+    }
+    @include breakpoint ($mobile-bp-375) {
+      max-width: 120px;
+      top: -20px;
+      left: 150px;
+    }
+}
+
+.circle__four {
+    position: absolute;
+    top: 300px;
+    left:400px;
+    z-index: -1;
+
+    @include breakpoint ($desktop-bp-992) {
+      max-width: 250px;
+      top: 250px;
+      left: 550px;
+    }
+
+    @include breakpoint ($tablets-bp-768) {
+      max-width: 180px;
+      top: 170px;
+      left: 400px;
+    }
+
+    @include breakpoint ($mobile-bp-576) {
+      max-width: 150px;
+      top: 100px;
+      left: 270px;
+    }
+    @include breakpoint ($mobile-bp-480) {
+      max-width: 100px;
+      top: 100px;
+      left: 250px;
+    }
+}
+
+/* MAIN */
+.main{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include breakpoint ($desktop-bp-1100) {
+        margin-bottom: 0;
+      }
+    @include breakpoint ($desktop-bp-992) {
+        margin-bottom: 30px;
+      }
+    @include breakpoint ($mobile-bp-576) {
+        margin-bottom: 20px;
+      }
+}
+
+.main__burger {
+  padding-top: 58px;
+  position: relative;
+}
+
+.main__box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title__wrapper {
+    position: relative;
+    left: -95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint ($desktop-bp-1100) {
+        left: -65px;
+      }
+
+      @include breakpoint ($desktop-bp-992) {
+        left: -53px;
+      }
+
+      @include breakpoint ($mobile-bp-576) {
+        left: -30px;
+      }
+}
+
+.main__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 175px;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    letter-spacing: -12px; 
+
+    transform: scale(0) rotate(-180deg);
+    transition: all .8s ease;
+
+    &.active {
+      transform: scale(1) rotate(-180deg);
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+        font-size: 150px;
+      }
+    @include breakpoint ($desktop-bp-880) {
+        font-size: 130px;
+      }
+    @include breakpoint ($tablets-bp-768) {
+        font-size: 115px;
+        letter-spacing: -10px; 
+      }
+    @include breakpoint ($mobile-bp-576) {
+        font-size: 90px;
+      }
+    @include breakpoint ($mobile-bp-480) {
+        font-size: 70px;
+        letter-spacing: -5px; 
+      }
+    @include breakpoint ($mobile-bp-375) {
+        font-size: 60px;
+      
+      }
+}
+
+.main__title-img {
+    margin-top: 5px;
+
+    @include breakpoint ($desktop-bp-880) {
+        max-width: 90px;
+      }
+    @include breakpoint ($tablets-bp-768) {
+        max-width: 80px;
+      }
+    @include breakpoint ($mobile-bp-576) {
+        max-width: 60px;
+      }
+    @include breakpoint ($mobile-bp-375) {
+        max-width: 50px;
+      }
+}
+
+.wrapper__img {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    @include breakpoint ($desktop-bp-1100) {
+        max-width: 650px;
+      }
+
+      @include breakpoint ($desktop-bp-992) {
+        max-width: 600px;
+        left: 53%;
+      }
+      @include breakpoint ($desktop-bp-880) {
+        max-width: 500px;
+      }
+      @include breakpoint ($tablets-bp-768) {
+        max-width: 410px;
+      }
+      @include breakpoint ($mobile-bp-576) {
+        max-width: 300px;
+      }
+      @include breakpoint ($mobile-bp-480) {
+        max-width: 250px;
+      }
+      @include breakpoint ($mobile-bp-375) {
+        max-width: 200px;
+       
+      }
+}
+
+.main__img {
+   width: 100%;
+    height: auto;
+}
+
+.wrapper__img-ear {
+    width: 100%;
+    max-width: 280px;
+    height: max-content;
+    // border: 1px solid blue;
+
+    position: relative;
+    top: -60px;
+    right: -50px;
+    z-index: 0;
+
+    @include breakpoint ($desktop-bp-992) {
+        top: 0;
+        max-width: 240px;
+      }
+      @include breakpoint ($desktop-bp-880) {
+        max-width: 200px;
+      }
+      @include breakpoint ($tablets-bp-768) {
+        max-width: 180px;
+      }
+      @include breakpoint ($mobile-bp-576) {
+        max-width: 150px;
+      }
+      @include breakpoint ($mobile-bp-480) {
+        max-width: 130px;
+      }
+      @include breakpoint ($mobile-bp-375) {
+        max-width: 100px;
+      }
+      
+}
+
+.main__text {
+    position: absolute;
+    z-index: 2;
+    max-width: 280px;
+    // border: 1px solid blue;
+    top: 145px;
+    right: -20px;
+
+    transform: translateY(120%);
+    opacity: 0;
+    transition: all .8s linear .5s;
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+    @include breakpoint ($desktop-bp-992) {
+        position: relative;
+        margin: 0 auto;
+        top: -50px;
+        right: 0;
+        max-width: 620px;
+        text-align: center;
+      }
+
+    @include breakpoint ($tablets-bp-768) {
+        top: -55px;
+        max-width: 370px;
+        font-size: 12px;
+      }
+    @include breakpoint ($mobile-bp-576) {
+        top: -45px;
+        max-width: 270px;
+        font-size: 10px;
+      }
+    @include breakpoint ($mobile-bp-480) {
+        max-width: 250px;
+      }
+    @include breakpoint ($mobile-bp-375) {
+        max-width: 200px;
+       
+      }
+}
+
+/* Main Button */
+
+.main-btn__link {
+    position: relative;
+    top: -40px;
+
+    @include breakpoint ($desktop-bp-1100) {
+      top: -70px;
+    }
+
+    @include breakpoint ($desktop-bp-992) {
+      top: -20px;
+    }
+} 
+
+.btn {
+    margin: 0 auto;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: $brovn;
+    color: $white;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0px 20px 40px #ffe8d9;
+    transition: all .3s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color:darken($color: $brovn, $amount: 7);
+    } 
+}
+
+.btn__icon {
+    margin-right: 5px;
+}
+
+/* MAIN SOCIAL */
+.main__social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    z-index: 5;
+
+    @include breakpoint ($desktop-bp-992) {
+        bottom: 90px;
+      }
+
+      @include breakpoint ($tablets-bp-768) {
+        display: none;
+      }
+}
+
+.main__social-link {
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    &:hover {
+        .main__icon {
+            fill: $brovn;
+        }
+    }
+}
+
+.main__icon {
+    width: 20px;
+    height: 20px;
+    fill: $gray;
+    transition: all .3s linear;
+
+    &-insta   {
+        width: 24px;
+        height: 24px;
+    }
+} 

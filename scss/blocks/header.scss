@@ -1,0 +1,264 @@
+/* HEADER*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    &.active {
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 20px;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        background-color: $white;
+        transform: translateY(-100%);
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        .logo {
+            display: none;
+        }
+
+        .nav {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .nav__item {
+            padding: 15px 0;
+        }
+
+        .nav__list {
+            flex-direction: column;
+            text-transform: capitalize;
+        }
+        .nav__link {
+            & .btn__icon {
+                display: inline-block;
+                position: relative;
+                top: 5px;
+            }
+            &:focus {
+                color: $brovn;
+            }
+        }
+
+        .nav__item-burger {
+            display: block;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .burger__img {
+            display: inline-block;
+        }
+
+        .search {
+            display: block;
+            width: 100%;
+        }
+
+        .search__box {
+            width: 100%;
+            padding: 5px 5px 5px 10px;
+        }
+
+        .search__box {
+            &:hover .search__text {
+            width: 100%;
+            font-size: 18px;        
+            }
+        }
+    }
+
+    &.trans {
+        transform: translateY(0);
+        transition: transform .9s linear;
+    }
+
+     &.rollback {
+        transform: translateY(-100%);
+        transition: transform .9s linear;
+    }
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+  
+      @include breakpoint ($tablets-bp-768) {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.nav {
+    display: flex;
+    height: auto;
+    font-size: 16px;
+   
+    @include breakpoint ($tablets-bp-768) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0 20px;
+
+    &-burger {
+        display: none;
+    }
+
+    &:hover .line {
+        width: 100%;
+    }
+
+    @include breakpoint ($desktop-bp-880) {
+        margin: 0 15px;
+      }
+}
+
+.nav__link {
+    transition: color .5s linear;
+
+    & .btn__icon {
+        display: none;
+    }
+}
+
+.line {
+    width: 0;
+    height: 1px;
+    background-color: $brovn;
+    display: block;
+    transition: width .5s linear ;
+
+    &_active {
+        width: 100%;
+    }
+    }
+
+    .nav__phone {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    
+        @include breakpoint ($tablets-bp-768) {
+            display: none;
+        }
+    }
+    
+    .phone__icon {
+        width: 25px;
+        height: 25px;
+        fill: $brovn;
+    }
+    
+    .nav__tel {
+        line-height: 1;
+        transition: all .3s linear;
+    
+        &:hover {
+            color: $brovn;
+        }
+    }
+
+/* BURGER BUTTON */
+
+.burger__btn {
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 21px;
+    right: 30px;
+    z-index: 20000;
+
+    @include breakpoint ($tablets-bp-768) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-close {
+        .burger__line-center  {
+            margin: -2px 0;
+        }
+    }
+
+    &-rotate {
+        .burger__line-one {
+            transform: rotate(45deg);
+            position: relative;
+            top: 1px;
+        }
+        .burger__line-two {
+            transform: rotate(-45deg);
+            position: relative;
+            bottom: 1px;
+        }
+        .burger__line-center {
+            display: none;
+        }
+    }
+}
+
+.burger__line {
+    background-color: $colortext;
+    width: 100%;
+    height: 2px;
+    transition: all .3s linear;
+}
+
+.burger__line-center {
+    margin: 6px 0;
+}
+
+/* BURGER MENU */
+
+.burger__img {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    z-index: 6;
+}
+
+
+// .burger {
+//     // border: 1px solid red;
+//     display: none;
+//     background-color: $white;
+//     overflow: hidden;
+//     height: 100vh;
+//     width: 100%;
+    
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 100;
+
+//     @include breakpoint ($tablets-bp-768) {
+//         display: block;
+//     }
+// }
+
+// .burger__wrapper {
+//     width: 100%;
+//     height: 100%;
+// }

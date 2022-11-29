@@ -1,0 +1,15 @@
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1070px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // border: 1px solid red;
+
+    @include breakpoint ($desktop-bp-992) {
+        padding: 0 30px;
+      }
+    @include breakpoint ($mobile-bp-576) {
+        padding: 0 20px;
+      }
+}
