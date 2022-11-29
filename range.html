@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ассортимен выпечки TheBakery. Подробная информация о товаре: фото, цены, состав">
+    <meta name="keywords" content="TheBakery пекарня большой ассортимент выпечки хлебобулочные и кондитерские изделия натуральные ингредиенты">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+     <!--favicon-->
+     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+     <link rel="manifest" href="img/favicons/site.webmanifest">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+    <title>Ассортимент продукции пекарни TheBakery</title>
+</head>
+<body id="body">
+    <div class="page" id="page">
+        <div class="container">
+
+            <!--HEADER
+            =====================-->
+            <header class="header" id="header">
+                <div class="logo"><a href="index.html">TheBakery</a></div>
+                <img class="burger__img" src="img/burger__img.png" alt="bread">
+                <nav class="nav">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item nav__item-burger">
+                            <a class="nav__link" href="range.html">
+                                <img class="btn__icon" src="img/btn.png" alt="">ассортимент
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="cooperation.html"> 
+                                <img class="btn__icon" src="img/btn.png" alt="">сотрудничество<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="delivery.html">
+                                <img class="btn__icon" src="img/btn.png" alt="">доставка<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contacts.html">
+                                <img class="btn__icon" src="img/btn.png" alt="">контакты<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item-burger">
+                            <a class="nav__link"  href="tel:+996555998899">  
+                                <img class="btn__icon" src="img/btn.png" alt="">заказать
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="nav__phone">
+                    <svg class="phone__icon">
+                        <use xlink:href="img/phone1.svg#phone"></use>
+                    </svg>
+                    <a class="nav__tel" href="tel:+996555998899">0 (555) 9988899 
+                    </a>
+                </div>
+              
+            </header>
+    
+            <div class="burger__btn " id="burger-btn">
+                <div class="burger__line burger__line-one"></div>
+                <div class="burger__line burger__line-center"></div>
+                <div class="burger__line burger__line-two"></div>
+            </div>
+
+             <!--MAIN RANGE
+            =====================-->
+            <section class="range" id="burger-ped">
+                <div class="search">
+                    <div class="search__title">Найди свое любимое лакомство</div>
+                    <div class="search__box">
+                        <input class="search__text" type="text" placeholder="Поиск" id="elastic">
+                        <div class="search__btn" id="s-btn"> 
+                            <svg class="search__icon">
+                                <use xlink:href="img/search.svg#search"></use>
+                            </svg>
+                            <svg class="search__icon-close">
+                                <use xlink:href="img/close.svg#close"></use>
+                            </svg>
+                        </div> 
+                    </div>
+                </div> <!--search-->
+                
+                <h1 class="section__title section__title-range">Ассортимент нашей выпечки</h1>
+
+                <div class="range__box">
+                    <h2 class="range__subtitle">Хлеб</h2>
+                    <div class="range__items">
+                        <div class="range__item">
+                            <div class="range__img-wrapper" id="rang-wrap">
+                                <img class="range__img" src="img/range/bread1.jpg" alt="Чиабатта">
+                                <div class="range__info-shade" id="card1" onClick="show_shade('card1')">Итальянский белый хлеб, изготовленный из пшеничной муки и дрожжей или на пшеничной закваске.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Чиабатта</p>
+                                    <p class="range__weight">260гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">60 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread2.jpg" alt="Ржаной со злаками">
+                                <div class="range__info-shade" id="card2"  onClick="show_shade('card2')">100% ржаной хлеб на ржаной закваске, без добавления промышленных дрожжей. Богат семенами льна, подсолнечника и овса.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Ржаной со злаками</p>
+                                    <p class="range__weight">410гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">50 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread3.jpg" alt="Бородинский">
+                                <div class="range__info-shade" id="card3" onClick="show_shade('card3')">Ржано-пшеничный заварной хлеб, содержание ржаной муки 60%, посыпан кориандром.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Бородинский</p>
+                                    <p class="range__weight">300гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">45 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread4.jpg" alt="Пшеничный со злаками">
+                                <div class="range__info-shade" id="card4" onClick="show_shade('card4')">Ржано-пшеничный хлеб с добавлением семян льна и подсолнечника</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Пшеничный со злаками</p>
+                                    <p class="range__weight">410гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">55 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread5.jpg" alt="Мультизлаковый">
+                                <div class="range__info-shade" id="card5" onClick="show_shade('card5')">В состав входят входит 5 видов хлопьев: овсяные, ржаные, пшеничные, ячменные и кукурузные.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Мультизлаковый</p>
+                                    <p class="range__weight">400гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">60сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread6.jpg" alt="Хлеб здоровый микс">
+                                <div class="range__info-shade" id="card6" onClick="show_shade('card6')">Пшенично-ржаной хлеб длительного брожения на закваске с семенами льна, подсолнечника, тыквы, черного кунжута и чиа.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Хлеб здоровый микс</p>
+                                    <p class="range__weight">320гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">70сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread7.jpg" alt="Французский багет">
+                                <div class="range__info-shade" id="card7" onClick="show_shade('card7')">Классический французский багет, приготовлен по традиционной технологии длительного холодного брожения. Сладковатый мякиш и хрустящая корочка.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Французский багет</p>
+                                    <p class="range__weight">300гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">40сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread8.jpg" alt="Пшеничный бездрожжевой">
+                                <div class="range__info-shade" id="card8" onClick="show_shade('card8')">Мука в/ссолод белый, патока светлая, закваска пшеничная, соль, масло растительное.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Пшеничный бездрожжевой</p>
+                                    <p class="range__weight">2кг.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">75сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/bread9.jpg" alt="Ржаной бездрожжевой">
+                                <div class="range__info-shade" id="card9" onClick="show_shade('card9')">Мука ржаная сеяная, солод, патока светлая, закваска, соль, масло растительное.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Ржаной бездрожжевой</p>
+                                    <p class="range__weight">2кг.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">75сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="range__box">
+                    <h2 class="range__subtitle">Выпечка</h2>
+                    <div class="range__items">
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing1.jpg" alt="Круассан классический">
+                                <div class="range__info-shade" id="card10" onClick="show_shade('card10')">Классический воздушный круассан</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Круассан классический</p>
+                                    <p class="range__weight">70гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">40 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing2.jpg" alt="Круассан с сыром">
+                                <div class="range__info-shade" id="card11" onClick="show_shade('card11')">Классический круассан запеченный с сыром</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Круассан с сыром</p>
+                                    <p class="range__weight">90гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">45 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing3.jpg" alt="Круассан с яблоками и корицей">
+                                <div class="range__info-shade" id="card12" onClick="show_shade('card12')">Фирменный круассан с яблочной начинкой и пряной корицей.
+                                Посыпан сахарной пудрой.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Круассан с яблоками и корицей</p>
+                                    <p class="range__weight">130гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">40 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing4.jpg" alt="Круассан с шоколадной пасто">
+                                <div class="range__info-shade" id="card13" onClick="show_shade('card13')">Классический круассан с начинкой из шоколадной пасты, украшенный крошкой темного шоколада и фундука</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Круассан с шоколадной пастой</p>
+                                    <p class="range__weight">100гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">55 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing5.jpg" alt="Завитушка">
+                                <div class="range__info-shade" id="card14" onClick="show_shade('card14')">Сдобная завитушка из слоеного теста с ванильным кремом и изюмом</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Завитушка</p>
+                                    <p class="range__weight">90гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">35 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing6.jpg" alt="Маффин шоколадный">
+                                <div class="range__info-shade" id="card15" onClick="show_shade('card15')">Маффин шоколадный с кусочками темного шоколада и сливочным кремом</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Маффин шоколадный</p>
+                                    <p class="range__weight">120гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">55 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing7.jpg" alt="Маффин черничный">
+                                <div class="range__info-shade" id="card16" onClick="show_shade('card16')">Веганский маффин с черникой и банановым пюре</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Маффин черничный</p>
+                                    <p class="range__weight">120гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">55 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/backing8.jpg" alt="Ватрушка с творогом">
+                                <div class="range__info-shade" id="card17" onClick="show_shade('card17')">Румяная пышная ватрушка с творогом, со сдобным тестом и сладкой начинкой.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Ватрушка с творогом</p>
+                                    <p class="range__weight">180гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">45 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="range__box">
+                    <h2 class="range__subtitle">Десерты</h2>
+                    <div class="range__items">
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert1.jpg" alt="Медовик">
+                                <div class="range__info-shade" id="card18" onClick="show_shade('card18')">Традиционный торт из нежных медовых коржей, пропитанных воздушным медово-сметанным кремом</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Медовик</p>
+                                    <p class="range__weight">650гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">550 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert2.jpg" alt="Наполеон">
+                                <div class="range__info-shade" id="card19" onClick="show_shade('card19')">Торт «Наполеон» —  десерт из хрупких воздушных слоев теста, со сливочным заварным кремом.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Наполеон</p>
+                                    <p class="range__weight">600гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">800 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert3.jpg" alt="Сметанник">
+                                <div class="range__info-shade" id="card20" onClick="show_shade('card20')">Слоеный торт с медовым бисквитом и сливочно-сметанным кремом.</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Сметанник</p>
+                                    <p class="range__weight">750гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">650 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert4.jpg" alt="Прага">
+                                <div class="range__info-shade" id="card21" onClick="show_shade('card21')">Торт Прага с бисквитными шоколадными коржами и шоколадным кремом, в который вмешивают абрикосовый джем</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Прага</p>
+                                    <p class="range__weight">750 гр</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">55 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert5.jpg" alt="Брауни">
+                                <div class="range__info-shade" id="card22" onClick="show_shade('card22')">Запеченный брауни на основе темного бельгийского шоколада с мягкой кремовой шоколадной начинкой</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Брауни</p>
+                                    <p class="range__weight">150гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">120 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert6.jpg" alt="Кольцо с творогом">
+                                <div class="range__info-shade" id="card23" onClick="show_shade('card23')">Пирожное из заварного теста в виде кольца с нежной творожно-ванильной начинкой</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Кольцо с творогом</p>
+                                    <p class="range__weight">120гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">65 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert7.jpg" alt="Лимонный тырт">
+                                <div class="range__info-shade" id="card24" onClick="show_shade('card24')">Французская классика с лимонным кремом и воздушной меренгой</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Лимонный тырт</p>
+                                    <p class="range__weight">150гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">110 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range__item">
+                            <div class="range__img-wrapper">
+                                <img class="range__img" src="img/range/dessert8.jpg" alt="Пирожное картошка">
+                                <div class="range__info-shade" id="card25" onClick="show_shade('card25')">Классическое пирожное картошка, приготовленное из шоколадного бисквита, сливочного масла и сгущенного молока, покрывается шоколадной глазурью</div>
+                            </div>
+                            <div class="range__info">
+                                <div class="range__data">
+                                    <p class="range__name">Пирожное картошка</p>
+                                    <p class="range__weight">100гр.</p>
+                                </div>
+                                <div class="range__order">
+                                    <p class="range__price">35 сом</p>
+                                    <button class="range__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+    
+            </section>
+
+            <!--ORDER
+            =====================-->
+            <section class="order">
+                <div class="order__left">
+                    <div class="form__wrapper">
+                        <form class="form__body" id="order__form" method="POST">
+                            <div class="form__data">
+                                <h1 class="section__title">Свяжитесь с нами</h1>
+                                <p class="form__subtitle">Оставьте нам свои данные, мы свяжесмя с вами в течении часа и обсудим ваш заказ</p>
+                                <div class="data__items anim-items">
+                                    <div class="data__item ">
+                                        <input class="input field-red" type="text" placeholder="Ваше ФИО или наименование организации*" name="name" id="name">
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="input__wrapper">
+                                            <input class="input field-red" type="tel" placeholder="Ваш телефон*" name="tel" id="tel">
+                                        </div>
+                                    </div>
+                                    <div class="data__item">
+                                        <input class="input field-red" type="email" placeholder="Email*" name="email" id="email">
+                                    </div>
+                                    <div class="data__item">
+                                        <textarea class="input task__input" placeholder="Перечислите, какую продукцию вы хотите заказать" name="message" id="message"></textarea>
+                                    </div>
+                                    <button class="form__btn btn about__btn " type="submit" id="form__btn">Отправить</button>
+                                </div>
+                            </div> <!--form__data-->
+
+                             <!--MODALS ==================-->
+                            <div class="modal" id="modal_send">
+                                <div class="modal__dialog">
+                                    <p class="modal__title">Сообщение отправлено!</p>
+                                    <p class="modal__text">В течение часа мы свяжемся с вами и обсудим детали заказа. <br>Спасибо за ваше доверие к нам!</p>
+                                    <div class="modal__button">
+                                        <button class="btn about__btn modal__btn" type="button" data-close>ЗАКРЫТЬ ОКНО</button>
+                                    </div>
+                                </div> <!--modal__dialog-->
+                            </div> <!--modal-->
+
+                            <div class="modal" id="modal_error">
+                                <div class="modal__dialog">
+                                    <p class="modal__title modal__title-ok">Ошибка!</p>
+                                    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                                    <div class="modal__button">
+                                        <button class="btn about__btn modal__btn" type="button" data-close>ОК</button>
+                                    </div>
+                                </div> <!--modal__dialog--> 
+                            </div> <!--modal-->
+
+                        </form>
+                    </div>
+                </div>
+                <div class="order__rght">
+                    <div class="order__img">
+                        <img class="order__img" src="img/order.png" alt="печенье">
+                    </div>
+                </div>
+            </section>
+
+            <!--FOOTER
+            =====================-->
+            <footer class="footer">
+                <div class="footer__left">
+                    <a class="footer__link" href="index.html">TheBakery</a>
+                    <p class="footer__text">© 2022. Сеть пекарен <br> Все права защищены.</p>
+                    <div class="footer__social">
+                        <div class="social__box">
+                            <svg class="social__icon">
+                                <use xlink:href="img/social/facebook.svg#fb"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon social__icon-insta">
+                                <use xlink:href="img/social/instagram.svg#insta"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon social__icon-tel">
+                                <use xlink:href="img/social/telegram.svg#telegram"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon">
+                                <use xlink:href="img/social/twitter.svg#twit"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <p class="footer__item-title">Продукция</p>
+                            <a class="footer__item-link" href="range.html">Ассортимент</a>
+                            <a class="footer__item-link" href="#">Новинки</a>
+                            <a class="footer__item-link" href="#">Акции</a>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Сервис</p>
+                            <a class="footer__item-link" href="delivery.html">Доставка</a>
+                            <a class="footer__item-link" href="#">Банкетный заказ</a>
+                            <a class="footer__item-link" href="#">Безналичный расчет</a>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Компания</p>
+                            <a class="footer__item-link" href="contacts.html">Контакты</a>
+                            <a class="footer__item-link" href="cooperation.html">Сотрудничество</a>
+                            <a class="footer__item-link" href="#">Вакансии</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!--container-->
+    </div> <!--page-->
+    
+    <!-- SCRIPT
+    =====================-->
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/rahge-card.js"></script>
+    
+</body>
+</html>

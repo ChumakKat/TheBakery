@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TheBakery - пекарня производящая уникальный ремеслянный хлеб. Большой ассортимен выпечки">
+    <meta name="keywords" content="TheBakery пекарня большой ассортимент выпечки хлебобулочные и кондитерские изделия натуральные ингредиенты">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Пекарня TheBakery</title>
+</head>
+
+<body id="body">
+    <div class="page" id="page">
+        <div class="container">
+
+            <!--HEADER
+            =====================-->
+            <header class="header" id="header">
+                <div class="logo"><a href="index.html">TheBakery</a></div>
+                <img class="burger__img" src="img/burger__img.png" alt="bread">
+                <nav class="nav">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item nav__item-burger">
+                            <a class="nav__link" href="range.html">
+                                <img class="btn__icon" src="img/btn.png" alt=""> ассортимент
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="cooperation.html"> 
+                                <img class="btn__icon" src="img/btn.png" alt=""> сотрудничество<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="delivery.html">
+                                <img class="btn__icon" src="img/btn.png" alt=""> доставка<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contacts.html">
+                                <img class="btn__icon" src="img/btn.png" alt=""> контакты<span class="line"></span>
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item-burger">
+                            <a class="nav__link"  href="tel:+996555998899">  
+                                <img class="btn__icon" src="img/btn.png" alt=""> заказать
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav__phone">
+                    <svg class="phone__icon">
+                        <use xlink:href="img/phone1.svg#phone"></use>
+                    </svg>
+                    <a class="nav__tel" href="tel:+996555998899">+996 (555) 9988899 
+                    </a>
+                </div>
+            </header>
+    
+            <div class="burger__btn " id="burger-btn">
+                <div class="burger__line burger__line-one"></div>
+                <div class="burger__line burger__line-center"></div>
+                <div class="burger__line burger__line-two"></div>
+            </div>
+
+             <!--MAIN
+            =====================-->
+            <section class="main" id="burger-ped">
+                <div class="main__box">
+        
+                    <img class="circle__one circle" src="img/circle1.svg" alt="">
+                    <img class="circle__two circle" src="img/circle2.svg" alt="">
+                    <img class="circle__three circle" src="img/circle3.svg" alt="">
+                    <img class="circle__four circle" src="img/circle4.png" alt="">
+                    
+                    <div class="title__wrapper">
+                        <h1 class="main__title anim-items anim-no-hide">Bakery</h1>
+                        <img class="main__title-img" src="img/bread_logo.png" alt="bread">
+                    </div>
+                    <div class="wrapper__img">
+                        <img class="main__img" src="img/main.png" alt="корзина с хлебом">
+                    </div>
+                    <div class="wrapper__img-ear">
+                        <img class="main__img" src="img/ear.png" alt="клосья пшеницы">
+                    </div>
+                
+                    <div class="main__social">
+                        <a class="main__social-link">
+                            <svg class="main__icon">
+                                <use xlink:href="img/social/facebook.svg#fb"></use>
+                            </svg>
+                        </a>
+                        <a class="main__social-link">
+                            <svg class="main__icon main__icon-insta">
+                                <use xlink:href="img/social/instagram.svg#insta"></use>
+                            </svg>
+                        </a>
+                        <a class="main__social-link">
+                            <svg class="main__icon">
+                                <use xlink:href="img/social/twitter.svg#twit"></use>
+                            </svg>
+                        </a>
+                    </div>
+ 
+                </div> <!--main__box-->
+
+                <div class="main__text anim-items anim-no-hide">"TheBakery" - это уникальный ремеслянный хлеб. Его главный ингредиент - искренняя страсть к хлебопечению и высокий профессионализм команды пекарей.</div>
+
+                <a class="btn__link main-btn__link" href="range.html">
+                    <div class="btn"><img class="btn__icon" src="img/btn.png" alt="">Ассортимент</div>
+                </a>
+            </section>
+
+             <!--ABOUT
+            =====================-->
+            <section class="about">
+                <h1 class="section__title">О нашей пекарне</h1>
+                <div class="section__text">Настоящий хлеб - это самостоятельная яркая, фактурная и многограмнная едаю Еда, которая доставляет такое же удовольстиве, как идеальный стейк или чашечка итальянского эспрессо.
+                    <p>Взяв лучшее из мирового опыта, "TheBakery" меняет отношение к хлебуб возвращая ему ценность самостоятельного изысканного продуктаю Мы не изобретаем новый хлебб технологию или рецептуру в буквальном смслею Мы переизобретаем само восприятие хлеба в головах людей.</p> 
+                </div>
+
+                <div class="tab" id="tab">
+                    <p> Истори я создания пекарни "TheBakery" началась в 2015 году с запуска производства на основе современных цехов по выпечке хлеба и открытия первого магазина. </p>
+                    <p> В 2017 году предприятие получает новое развитие: расширяется ассортимент выпечки, увеличивается объем производства, открываются дополнительные филиалы.</p>
+                    <p>На данный момент пекарня выпускает более 50 наименований хлебаб кондитерских изделийб выпечкиб тортов по оригинальной рецептурею Особое внимание уделяется постоянному отслеживанию качества продукцииб при изготовлении которой используются только отборные ингридиенты.</p>
+                    <p>Пекарня готова выполнить и индивидуальные заказы на торты, кондитерские изделия, организовать доставку заказа к любому празднику, дружеской встрече, свадьбе и другому событию. Ни одно мероприятие не будет слишком маленьким или большим для наших пекарей! Все, что мы делаем нашими руками идет от сердца.</p>
+                </div>
+                <div class="btn__box">
+                    <div class="shadow"></div>
+                    <a class="btn__link">
+                        <div class="btn about__btn" id="about-btn">
+                            <img class="btn__icon" src="img/btn.png" id="icon" alt="">
+                            <div class="btn__text btn__more" id="more">Узнать больше</div>
+                            <div class="btn__text btn__turn" id="turn">Свернуть </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!--ARGUMENT
+            =====================-->
+            <div class="argument">
+
+                <img class="side__left" src="img/paral1.png" alt="">
+                <img class="side__right" src="img/paral2.png" alt="">
+
+                <div class="argument__items">
+                    <div class="argument__item argument__item-top">
+                        <div class="argument__img-wrapper">
+                            <img class="ellipse" src="img/elli10.svg" alt="">
+                            <img class="argument__img argument__img-top" src="img/argument1.png" alt="корзина с хлебом">
+                        </div>
+                        <div class="argument__info argument__info-top anim-items">
+                            <p class="argument__title anim-show">Свежая</p>
+                            <p class="argument__text anim-show">Всегда свежая выпечка, которую мы готовим  при вас.</p>
+                        </div>
+                    </div>
+                    <div class="argument__item-box">
+                        <div class="argument__item">
+                            <div class="argument__img-wrapper">
+                                <img class="ellipse ellipse-left" src="img/elli10.svg" alt="">
+                                <img class="argument__img" src="img/argument2.png" alt="корзина с хлебом">
+                            </div>
+                            <div class="argument__info argument__info-left anim-items">
+                                <p class="argument__title anim-show">Вкусная</p>
+                                <p class="argument__text anim-show">Ароматная и вкусная выпечка, не оставит вас равнодушными.</p>
+                            </div>
+                        </div>
+                        <div class="argument__item">
+                            <div class="argument__img-wrapper">
+                                <img class="ellipse ellipse-right" src="img/elli10.svg" alt="">
+                                <img class="argument__img" src="img/argument3.png" alt="корзина с хлебом">
+                            </div>
+                            <div class="argument__info argument__info-right anim-items">
+                                <p class="argument__title anim-show">Натуральная</p>
+                                <p class="argument__text anim-show">Мы используем только проверенные ингредиенты высочайшего качества.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--argument-->
+
+            <!--MADE
+            =====================-->
+            <section class="made">
+                <div class="made__box-left">
+                    <h2 class="made__title">Как мы это делаем?</h2>
+                    <p class="made__text">При приготовлении не используются добавки, улучшители, консерванты. При этом, значительная часть продукции традиционно изготавливаются вручную. Для того, чтобы «здесь и сейчас» приготовить вашу любимую продукцию, мы отбираем лучшее сырье. В этом заключается главный секрет 100% качества. Мы соединили традиции с передовыми технологиями. В пекарнях уживаются настоящий французский круассан, украинский хлеб и русские пирожки. Мы постоянно экспериментируем, собираем лучшие рецепты всех времен, чтобы удивляться и удивлять вас!</p>
+                    <img class="made__img" src="img/made.png" alt="круассан">
+                    <a class="btn__link made-btn__link">
+                        <div class="btn made__btn" id="btn1" onClick="show_modal('btn1')"><img class="btn__icon" src="img/btn.png" alt="">Заказать</div>
+                    </a>
+                </div>
+                <div class="made__box-right">
+                    <div class="made__items">
+                        <div class="made__item anim-items">
+                            <div class="made__wrapper-img anim-show-img">
+                                <img class="made__item-img" src="img/made_1.png" alt="кукурузная крупа">
+                            </div>
+                            <div class="made__wrapper-info anim-show-text">
+                                <p class="made__item-title">Кукурузная крупа</p>
+                                <p class="made__item-text">Кукурузная крупа имеет богатый химиеский состав и легкую усвояемость, стимулирует работу кишечника, а так же не содержит глютен.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="made__item anim-items">
+                            <div class="made__wrapper-img anim-show-img">
+                                <img class="made__item-img" src="img/made_2.png" alt="соевые хлопья">
+                            </div>
+                            <div class="made__wrapper-info anim-show-text">
+                                <p class="made__item-title">Соевые хлопья</p>
+                                <p class="made__item-text">Соя содержит большое количество белка, богата витаминами, минералами, жирными кислотами омега-3.</p>
+                            </div>
+                        </div>
+                        <div class="made__item anim-items">
+                            <div class="made__wrapper-img anim-show-img">
+                                <img class="made__item-img" src="img/made_3.png" alt="овсяные хлопья">
+                            </div>
+                            <div class="made__wrapper-info anim-show-text">
+                                <p class="made__item-title">Овсяные хлопья</p>
+                                <p class="made__item-text">Овсяные хлопья содержат большое количество грубых пищевых волокон полезных для кишечника.</p>
+                            </div>
+                        </div>
+                        <div class="made__item anim-items">
+                            <div class="made__wrapper-img anim-show-img">
+                                <img class="made__item-img" src="img/made_4.png" alt="оливковое масло">
+                            </div>
+                            <div class="made__wrapper-info anim-show-text">
+                                <p class="made__item-title">Оливковое масло</p>
+                                <p class="made__item-text">Оливковое масло считается средством профилактики сердечно-сосудистых заболеваний.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section >
+
+            <!--TEAM
+            =====================-->
+            <section class="team">
+                <div class="team__box-left">
+                    <div class="argument__img-wrapper team_img-wrapper">
+                        <img class="ellipse team__ellipse team__ellipse-left" src="img/elli10.svg" alt="">
+                        <div class="team__img-hiden">
+                            <img class="team__img" src="img/team.png" alt="шеф повар">
+                        </div>
+                    </div>
+                    <div class="over anim-items">
+                        <div class="over__icon-box">
+                            <svg class="over__icon">
+                                <use xlink:href="img/star.svg#star"></use>
+                            </svg>
+                        </div>
+                        <p class="over__grade"><span>4.7 </span>/ 5</p>
+                       
+                        <p class="over__title">Наш Chef</p>
+                        <p class="over__text">Акимов Руслан</p>
+                    </div>
+                </div>
+                <div class="team__box-right">  
+                    <h1 class="section__title section__title-team">Наши пекари</h1>
+                    <p class="team__text">
+                        В нашей команде эксперементаторы и исследователи вкуса, увлеченные профессионалы своего дела, обладающие глубокими знаниями в области биохимии, физики и технологий. Наши пекари знают всё о качестве зерна и помола муки, разбираются в микробиологии хлеба и мастерски управляют ферментацией. Это те, кто понимает, что за видимой простотой создания идеального хлеба скрываются сложные научные процессы.</p>
+                        <a class="btn__link">
+                            <div class="btn about__btn team__btn" id="btn2" onClick="show_modal('btn2')" ><img class="btn__icon" src="img/btn.png" alt="">Заказать</div>
+                        </a>
+                </div>
+            </section>
+
+            <section class="team team-two">
+                <div class="team__box-right team__box-right-two">  
+                    <h1 class="section__title section__title-team">Индивидуальный заказ</h1>
+                    <p class="team__text">
+                        Пекарня готова выполнить и индивидуальные заказы на торты, кондитерские изделия, организовать доставку заказа к любому празднику, дружеской встрече, свадьбе и другому событию. Ни одно мероприятие не будет слишком маленьким или большим для наших пекарей! Все, что мы делаем нашими руками идет от сердца.
+                    </p>
+                    <a class="btn__link">
+                        <div class="btn about__btn team__btn" id="btn3" onClick="show_modal('btn3')">
+                            <img class="btn__icon" src="img/btn.png" alt="">Заказать
+                        </div>
+                    </a>
+                </div>
+                <div class="team__box-left team__box-left-two">
+                    <div class="argument__img-wrapper team_img-wrapper">
+                        <img class="ellipse team__ellipse team__ellipse-right" src="img/elli10.svg" alt="">
+                        <div class="team__img-hiden">
+                            <img class="team__img team__img_two" src="img/team2.png" alt="повар">
+                        </div>
+                    </div>
+                    <div class="over over__two anim-items">
+                        <div class="over__icon-box">
+                            <svg class="over__icon">
+                                <use xlink:href="img/star.svg#star"></use>
+                            </svg>
+                        </div>
+                        <p class="over__grade"><span>4.5 </span>/ 5</p>
+                        <p class="over__title">Кондитер-оформитель</p>
+                        <p class="over__text">Омаров Амир</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--REVIEWS
+            =====================-->
+            <section class="reviews" id="revievs_height">
+                <h1 class="section__title">Отзывы</h1>
+                <div class="reviews__items" id="reviews">
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/reviews.jpg" alt="аватар клиента">
+                            <p class="reviews__name">Алина Насырова</p>
+                            <p class="reviews__text">Огромный выбор вкуснейшей выпечки. Любим заходить всей семьей, и каждый находит для себя что-то вкусненькое. Дети не могут пройти мимо, не уговорив заглянуть к вам))</p>
+                        </div>
+                    </div>
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/reviews4.jpg" alt="аватар клиента">
+                            <p class="reviews__name">Руслан Исламов</p>
+                            <p class="reviews__text">Раньше всегда брал там выпечку, когда работал рядом. Теперь к сожалению нет рядом такой прекрасной пекарни, но когда нахожусь в вашем районе всегда захожу за любимым печеньем, и ним чаепитее в сто крат вкуснее. Расширяйтесь, побольше бы таких пекарен в нашем городе.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/reviews5.jpg" alt="аватар клиента">
+                            <p class="reviews__name">Аделина Татаурова</p>
+                            <p class="reviews__text">Завтрак с вашими булочками, главный залог хорошего дня. Спасибо вам за вашу качественную работу, всегда вкусная выпечка, доступные цены и вежливый персонал.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/reviews2.jpg" alt="аватар клиента">
+                            <p class="reviews__name">Елена Колокольникова</p>
+                            <p class="reviews__text">Всегда заказываем на весь офис и каждому найдется что-то по вкус - круасаны, торты, пироженые, булочки, печенья и др. Большой выбор радует.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__wrapper">
+                        <div class="reviews__item">
+                            <img class="reviews__img" src="img/reviews/reviews3.jpg" alt="аватар клиента">
+                            <p class="reviews__name">Константин Маликов</p>
+                            <p class="reviews__text">Моя любимая пекарня, всегда свежая и вкусная выпечка. Торт медовик просто пальчики оближешь. А овсяные печенья, это неотьемлемая часть гостинца, когда идешь к бабушке в гости. Так же хотел отметить быструю доставку, кода нужно быстро и вкусно перекусить, всегда выручаете. 10 баллов из 10.</p>
+                        </div>
+                    </div>
+                </div> <!--reviews__items-->
+            </section>
+
+            <!--ORDER
+            =====================-->
+            <section class="order" id="forme">
+                <div class="order__left">
+                    <div class="form__wrapper">
+                        <form class="form__body" id="order__form" method="POST">
+                            <div class="form__data">
+                                <h1 class="section__title">Свяжитесь с нами</h1>
+                                <p class="form__subtitle">Оставьте нам свои данные, мы свяжесмя с вами в течении часа и обсудим ваш заказ</p>
+                                <div class="data__items anim-items">
+                                    <div class="data__item ">
+                                        <input class="input field-red" type="text" placeholder="Ваше ФИО или наименование организации*" name="name" id="name">
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="input__wrapper">
+                                            <input class="input field-red" type="tel" placeholder="Ваш телефон*" name="tel" id="tel">
+                                        </div>
+                                    </div>
+                                    <div class="data__item">
+                                        <input class="input field-red" type="email" placeholder="Email*" name="email" id="email">
+                                    </div>
+                                    <div class="data__item">
+                                        <textarea class="input task__input" placeholder="Перечислите, какую продукцию вы хотите заказать" name="message" id="message"></textarea>
+                                    </div>
+                                    <button class="form__btn btn about__btn " type="submit" id="form__btn">Отправить</button>
+                                </div>
+                            </div> <!--form__data-->
+
+                             <!--MODALS ==================-->
+                            <div class="modal" id="modal_send">
+                                <div class="modal__dialog">
+                                    <p class="modal__title">Сообщение отправлено!</p>
+                                    <p class="modal__text">В течении часа мы свяжемся с вами и обсудим детали заказа. <br>Спасибо за ваше доверие к нам!</p>
+                                    <div class="modal__button">
+                                        <button class="btn about__btn modal__btn btn-send" type="button" data-close data-send>ЗАКРЫТЬ</button>
+                                    </div>
+                                </div> <!--modal__dialog-->
+                            </div> <!--modal-->
+
+                            <div class="modal" id="modal_error">
+                                <div class="modal__dialog">
+                                    <p class="modal__title modal__title-ok">Ошибка!</p>
+                                    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                                    <div class="modal__button">
+                                        <button class="btn about__btn modal__btn" type="button" data-close>ОК</button>
+                                    </div>
+                                </div> <!--modal__dialog--> 
+                            </div> <!--modal-->
+                        </form>
+                    </div>
+                </div>
+                <div class="order__rght">
+                    <div class="order__img">
+                        <img class="order__img" src="img/order.png" alt="печенье">
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal" id="modal_order">
+                <div class="modal__dialog">
+                    <p class="modal__title modal__title-ok">Для заказа свяжитесь с нами:</p>
+                    <div class="modal__text modal__text-order">
+                       <p class="modal__oder-wrap">Позвонить по телефону:
+                            <a class="modal__order-phone modal__order-link" href="tel:+996555998899">+996(555)998899 </a>
+                        </p>
+                        <p class="modal__oder-wrap">Написать в
+                            <a class="modal__order-wa modal__order-link" href="https://wa.me/+996555998899" target="_blank">WhatsApp</a>
+                        </p>
+                        <p class="modal__oder-wrap">Написать на
+                            <span class="modal__order-email modal__order-link" id="order-email" data-scroll="#forme">Email</span>
+                        </p>
+                    </div>
+                    <div class="modal__button">
+                        <button class="btn about__btn modal__btn" type="button" data-close>ЗАКРЫТЬ</button>
+                    </div> 
+                </div> <!--modal__dialog--> 
+            </div> <!--modal-->
+
+            <!--FOOTER
+            =====================-->
+            <footer class="footer">
+                <div class="footer__left">
+                    <a class="footer__link" href="index.html">TheBakery</a>
+                    <p class="footer__text">© 2022. Сеть пекарен <br> Все права защищены.</p>
+                    <div class="footer__social">
+                        <div class="social__box">
+                            <svg class="social__icon">
+                                <use xlink:href="img/social/facebook.svg#fb"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon social__icon-insta">
+                                <use xlink:href="img/social/instagram.svg#insta"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon social__icon-tel">
+                                <use xlink:href="img/social/telegram.svg#telegram"></use>
+                            </svg>
+                        </div>
+                        <div class="social__box">
+                            <svg class="social__icon">
+                                <use xlink:href="img/social/twitter.svg#twit"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <p class="footer__item-title">Продукция</p>
+                            <a class="footer__item-link" href="range.html">Ассортимент</a>
+                            <a class="footer__item-link" href="#">Новинки</a>
+                            <a class="footer__item-link" href="#">Акции</a>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Сервис</p>
+                            <a class="footer__item-link" href="delivery.html">Доставка</a>
+                            <a class="footer__item-link" href="#">Банкетный заказ</a>
+                            <a class="footer__item-link" href="#">Безналичный расчет</a>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__item-title">Компания</p>
+                            <a class="footer__item-link" href="contacts.html">Контакты</a>
+                            <a class="footer__item-link" href="cooperation.html">Сотрудничество</a>
+                            <a class="footer__item-link" href="#">Вакансии</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!--container-->
+    </div> <!--page-->
+    
+    <!-- SCRIPT
+    =====================-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/anim.js"></script>
+  
+</body>
+</html>
