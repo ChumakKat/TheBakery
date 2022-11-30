@@ -156,6 +156,7 @@
     padding: 8px 12px;
     line-height: 1;
     transition: all .3s linear;
+    cursor: pointer;
 
     &:hover {
         background-color:darken($color: $brovn, $amount: 7);
