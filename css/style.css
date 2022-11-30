@@ -2652,6 +2652,7 @@ ol, ul {
   line-height: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .range__button:hover {
   background-color: #a96130;
