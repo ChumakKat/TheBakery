@@ -2772,6 +2772,7 @@ ol, ul {
   height: 28px;
   border-radius: 50%;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .search__icon {
